@@ -1,6 +1,5 @@
 import './style.css';
 import CheckBoxEvent from './modules/checkbox.js';
-import Sortable from './modules/Sortable';
 
 const toDoList = document.querySelector('.content-container');
 const headtag = document.querySelector('.headtag');
@@ -109,7 +108,3 @@ clearBtn.addEventListener('click', (e) => {
   localStorage.setItem('tasks', JSON.stringify(filtered));
   loadTask(filtered);
 });
-
-new Sortable(toDoList, {
-  animation : 300 
-},);
